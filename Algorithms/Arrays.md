@@ -45,3 +45,19 @@
 
 	Time Complexity: O(nlogn)
 	Space Complexity: O(n)
+
+## Question 922 Sort Array By ParityII
+	Description: Given an non-negative integer array, sort them so that A[i] is even when i is even and A[j] is odd when j is odd
+
+	My Solution: Two pointer, i iterates even index and j iterates odd index, swap when A[i] == odd && A[j] == even. 
+
+	Time Complexity: O(n);
+	Space Complexity: O(1);
+
+## Question 509 Fibonacci Number 
+	Description: calculate F(N) with given non-negative integer N;
+
+	My Solution: Dynamic Programming, create a DP array and return arr[N];
+
+	Time Complexity: O(N);
+	Space Complexity: O(N);
