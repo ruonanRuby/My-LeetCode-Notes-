@@ -61,3 +61,28 @@
 
 	Time Complexity: O(N);
 	Space Complexity: O(N);
+
+## Question 1085 Sum of Digits in the Minimum Number 
+	Description: find the sum of minimal digits return 1 if it is even and 0 if it is odd.
+
+	My Solution: Iterate array and find the min, then mod 10 to get the sum of last digit, divide 10 th make the number smaller, loop ends when min number == 0 
+
+	Time Complexity: O(N);
+	Space Complexity: O(1);
+
+## Question 1086 High Five
+	Description: Given a 2d array with student id and their scores, find the average of top five scores for every student and return a new 2d array to store it. 
+
+	My Solution: Using hashmap with priority Queue as key value. 
+
+	Time Complexity: O(n^2log(n));
+	Space Complexity: O(N);
+
+## Question 1002 Find Common Characters
+	Description: Given a string array, output the common characters that show up in all string and output the minimim times as the character shows i.e.: 'l' 'l' for 'roller' etc.
+
+	My Solution: Create an array to count the minimum times that each character shows in every string, meaning 'apple' p with 2 times but 'play' for 1 time. Iterate each string in string array and count the times character shows up, then find the total minimum after traversing the whole array. 
+	Output the string list as it required.
+
+	Time Complexity: O(N);
+	Space Complexity: O(1);
