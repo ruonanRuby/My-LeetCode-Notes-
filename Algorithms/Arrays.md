@@ -86,3 +86,11 @@
 
 	Time Complexity: O(N);
 	Space Complexity: O(1);
+
+## Question 985 Sum of Even Numbers After Queries 
+	Description: return the sum of even value in A after adding value from given index in the queries array
+
+	My Solution: find the original sum, then add / minus value whether the given index is calculated in the sum and whether the new value is even or odd.
+
+	Time Complexity: O(N)
+	Space Complexity:  O(N)
