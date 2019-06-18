@@ -87,6 +87,14 @@
 	Time Complexity: O(N);
 	Space Complexity: O(1);
 
+## Question 867 Transpose Matrix
+	Description: transpose the matrix A by flipping over its main diagonal. Ex: A[[1,2], [3,4]] ANS: [[1,3], [2,4]]
+
+	My Solution: Create a new 2D array ANS with flipped the index of A, then output the new 2D array.
+
+	Time Complexity: O(N) <the size of A> 
+	Space Complexity: O(N)
+
 ## Question 985 Sum of Even Numbers After Queries 
 	Description: return the sum of even value in A after adding value from given index in the queries array
 
