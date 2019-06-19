@@ -102,3 +102,22 @@
 
 	Time Complexity: O(N)
 	Space Complexity:  O(N)
+
+## Question 766 Toeplitz Matrix 
+
+	Description: return true if every diagonal in a matrix from top-left to bottom-right has the same element.
+
+	My Solution: the diagonal means starting from [i][j] both indices increment by one i.e. [i + 1][j + 1],therefore, we compare the value to see if they are same or not 
+
+	Time Complexity: O(N) < the size of matrix>
+	Space Complexity: O(1)
+
+## Question 566 Reshape the Matrix 
+
+	Description: reshape the matrix with given new row and column 
+
+	My Solution: since the total number of values is the same, so we have i from 0 to (r*c)-1, with that we have i/c = new row index i % c = new column index, FYI: c is the new column number 
+	i/nums[0].length = row index, i%nums[0].length = column index. Hence we can put the value into the new array.
+
+	Time Complexity: O(N)< The size of nums matrix>
+	Space Complexity: O(N)
