@@ -121,3 +121,21 @@
 
 	Time Complexity: O(N)< The size of nums matrix>
 	Space Complexity: O(N)
+
+## Question 243 Shortest Word Distance 
+	
+	Description: find the shortest distance between two given words in the array.
+
+	My Solution: Iterate the array and check if the value equals to any given word, if it does, keep the index as first for word1 or second for word2, once one index changed, compare the current minimum distance with the new minimum distance to find the min, and return the min after iteration.
+
+	Time Complexity: O(N)
+	Space Complexity: O(1)
+
+## Question 888 Fair Candy Swap 
+
+	Description: output the swap value from two array so that the sum of each array values is the same.
+
+	My Solution: sort two arrays, then check the first array with the output sum, if it is less than sum meaning it needs larger value from second array, if it is larger than sum meaning it needs swap larger value to second array.output the ans array.
+
+	Time Complexity: O(n^2)
+	Space Complexity: O(1)
