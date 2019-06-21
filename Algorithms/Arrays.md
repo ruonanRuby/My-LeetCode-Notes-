@@ -139,3 +139,31 @@
 
 	Time Complexity: O(n^2)
 	Space Complexity: O(1)
+
+## Question 1014 Partition Array Into Three Parts With Equal Sum 
+
+	Description: return a boolean value to see if the array can be make up by three subarrays, which have the same sum.
+
+	My Solution: first check if the total sum of array can be divided by 3 and the length >=3, if not then return false directly, then using two pointers, one starts from the beginning one starts from the end,  if one side reach the goal then wait the other side and return true if both side = (sum/3)
+
+	Time Complexity: O(n)
+	Space Complexity: O(1)
+
+## Question 896.Monotonic Array 
+	
+	Description: return a boolean value if the array is monotonic increasing/ decreasing or not. 
+	monotonic increasing: i < j A[i] <= A[j] monotonic decreasing: i < j A[i] >= A[j]
+
+	My Solution: using two boolean value to compare local max/ min between two adjacent value, if it is decreasing then it is not mono increasing, it is increasing then it it not mono decreasing. return (monoInc || monoDec)
+
+	Time Complexity: O(N)
+	Space Complexity: O(1)
+
+## Question 485 Max Consecutive Ones 
+	
+	Description: return the max number of consecutive 1s in the array.
+
+	My Solution: count the consecutive 1s in the array, if the next value is 0 count becomes 0, then update the global max with Math.max(count,max) return the max.
+
+	Time Complexity: O(N)
+	Space Complexity: O(1)
