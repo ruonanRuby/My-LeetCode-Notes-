@@ -167,3 +167,38 @@
 
 	Time Complexity: O(N)
 	Space Complexity: O(1)
+
+## Question 283 Move Zeroes 
+	
+	Description: move all 0's in the array the the end while mainting the relative order of none-zero elements.
+
+	My Solution: two pointers, i iterates the array, one it points to none- zero element, check the other pointer j , if it points zero, swap, otherwise increase j.
+
+	Time Complexity: O(N)
+	Space Complexity: O(1)
+
+## Questin 448 Find All Numbers Disappeared in an Array 
+	
+	Description: Given an array with value all 1<= arr[i] <= n, find the numbers that never appear in the array but within the range. 
+
+	My Solution: Since value is 1 difference to the index, therefore we can use the index to solve the problem.
+	First iterate the array and find the index = arr[i] - 1, then make the arr[index] to negative number.
+	Second, traverse the array again, if the value is larger than 0 meaning we never touch that index then add index + 1 to the output list .
+
+	Time Complexity ; O(N)
+	Space Complexity: O(1)
+
+## Question 169 Majority Element 
+
+	Description: find the majority element in an array, that is the value that appears in the array more than length/2 times.
+
+	My Solution: first solution: as the number appears more than n/2 time (n = length of array), therefore, we sort the array then output arr[n/2] which will be the number we want 
+
+	Time Complexity: O(nlogn);
+	Space Complexity: O(1);
+
+	second Solution: this algorithm learned from http://www.cs.utexas.edu/~moore/best-ideas/mjrty/index.html, 
+	we count the time that one elements shows in the array, if the count == zero, we record the element as the output, if the next element is not the output value, we decrease the count by one, otherwise we increase the count by one, the output val will be the one we want. 
+
+	Time Complexity: O(n);
+	Space Complexity: O(1);
