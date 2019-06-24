@@ -1,6 +1,6 @@
-# Easy 
+## Easy 
 
-##  Question 1064.Fixed Point
+###  Question 1064.Fixed Point
 	Description: Find the SMALLEST index in which A[i] == i
 
 	My Solution: check the array not-exist situation then iterate the array 
@@ -9,7 +9,7 @@
 	Time Complexity: O(n);
 	Space Complexity: O(1);
  	
-## Question 832 Flipping an Image 
+### Question 832 Flipping an Image 
 	Description: flip the row of binary matrix A then invert it 
 
 	My Solution: Iterative row.length / 2 to flip and inver the node value 
@@ -17,7 +17,7 @@
 	Time Complexity: O(N) <the size of binary matrix>
 	Space Complexity: O(N)
 
-## Question 977 Squares of a Sorted Array
+### Question 977 Squares of a Sorted Array
 	Description: Given an non-decreasing integer array, return non-decreasing square array.
 
 	My Solution: Brute Force Iterative and Arrays.sort (probably a really bad and ugly choice),need improvement from discussion board.
@@ -30,7 +30,7 @@
 	Time Complexity: O(n)
 	Space Complexity: O(n)
 
-## Question 1051 Height Checker 
+### Question 1051 Height Checker 
 	Description: Given an array, find the number which is not in its sorted position;
 
 	My Solution: copy and sort the array, then compare whether the sorted contains the same element as the origin at the same position, count the difference
@@ -38,7 +38,7 @@
 	Time Complexity: O(nlogn)
 	Space Complexity: O(n)
 
-## Question 561 Array partition I 
+### Question 561 Array partition I 
 	Description: find the max sum of min(ai,bi), ai and bi both from array nums
 
 	My Solution: In order to find the max sum, we need to minimize the loss, so sort the array then sum all even index nodes value 
@@ -46,7 +46,7 @@
 	Time Complexity: O(nlogn)
 	Space Complexity: O(n)
 
-## Question 922 Sort Array By ParityII
+### Question 922 Sort Array By ParityII
 	Description: Given an non-negative integer array, sort them so that A[i] is even when i is even and A[j] is odd when j is odd
 
 	My Solution: Two pointer, i iterates even index and j iterates odd index, swap when A[i] == odd && A[j] == even. 
@@ -54,7 +54,7 @@
 	Time Complexity: O(n);
 	Space Complexity: O(1);
 
-## Question 509 Fibonacci Number 
+### Question 509 Fibonacci Number 
 	Description: calculate F(N) with given non-negative integer N;
 
 	My Solution: Dynamic Programming, create a DP array and return arr[N];
@@ -62,7 +62,7 @@
 	Time Complexity: O(N);
 	Space Complexity: O(N);
 
-## Question 1085 Sum of Digits in the Minimum Number 
+### Question 1085 Sum of Digits in the Minimum Number 
 	Description: find the sum of minimal digits return 1 if it is even and 0 if it is odd.
 
 	My Solution: Iterate array and find the min, then mod 10 to get the sum of last digit, divide 10 th make the number smaller, loop ends when min number == 0 
@@ -70,7 +70,7 @@
 	Time Complexity: O(N);
 	Space Complexity: O(1);
 
-## Question 1086 High Five
+### Question 1086 High Five
 	Description: Given a 2d array with student id and their scores, find the average of top five scores for every student and return a new 2d array to store it. 
 
 	My Solution: Using hashmap with priority Queue as key value. 
@@ -78,7 +78,7 @@
 	Time Complexity: O(n^2log(n));
 	Space Complexity: O(N);
 
-## Question 1002 Find Common Characters
+### Question 1002 Find Common Characters
 	Description: Given a string array, output the common characters that show up in all string and output the minimim times as the character shows i.e.: 'l' 'l' for 'roller' etc.
 
 	My Solution: Create an array to count the minimum times that each character shows in every string, meaning 'apple' p with 2 times but 'play' for 1 time. Iterate each string in string array and count the times character shows up, then find the total minimum after traversing the whole array. 
@@ -87,7 +87,7 @@
 	Time Complexity: O(N);
 	Space Complexity: O(1);
 
-## Question 867 Transpose Matrix
+### Question 867 Transpose Matrix
 	Description: transpose the matrix A by flipping over its main diagonal. Ex: A[[1,2], [3,4]] ANS: [[1,3], [2,4]]
 
 	My Solution: Create a new 2D array ANS with flipped the index of A, then output the new 2D array.
@@ -95,7 +95,7 @@
 	Time Complexity: O(N) <the size of A> 
 	Space Complexity: O(N)
 
-## Question 985 Sum of Even Numbers After Queries 
+### Question 985 Sum of Even Numbers After Queries 
 	Description: return the sum of even value in A after adding value from given index in the queries array
 
 	My Solution: find the original sum, then add / minus value whether the given index is calculated in the sum and whether the new value is even or odd.
@@ -103,7 +103,7 @@
 	Time Complexity: O(N)
 	Space Complexity:  O(N)
 
-## Question 766 Toeplitz Matrix 
+### Question 766 Toeplitz Matrix 
 
 	Description: return true if every diagonal in a matrix from top-left to bottom-right has the same element.
 
@@ -112,7 +112,7 @@
 	Time Complexity: O(N) < the size of matrix>
 	Space Complexity: O(1)
 
-## Question 566 Reshape the Matrix 
+### Question 566 Reshape the Matrix 
 
 	Description: reshape the matrix with given new row and column 
 
@@ -122,7 +122,7 @@
 	Time Complexity: O(N)< The size of nums matrix>
 	Space Complexity: O(N)
 
-## Question 243 Shortest Word Distance 
+### Question 243 Shortest Word Distance 
 	
 	Description: find the shortest distance between two given words in the array.
 
@@ -131,7 +131,7 @@
 	Time Complexity: O(N)
 	Space Complexity: O(1)
 
-## Question 888 Fair Candy Swap 
+### Question 888 Fair Candy Swap 
 
 	Description: output the swap value from two array so that the sum of each array values is the same.
 
@@ -140,7 +140,7 @@
 	Time Complexity: O(n^2)
 	Space Complexity: O(1)
 
-## Question 1014 Partition Array Into Three Parts With Equal Sum 
+### Question 1014 Partition Array Into Three Parts With Equal Sum 
 
 	Description: return a boolean value to see if the array can be make up by three subarrays, which have the same sum.
 
@@ -149,7 +149,7 @@
 	Time Complexity: O(n)
 	Space Complexity: O(1)
 
-## Question 896.Monotonic Array 
+### Question 896.Monotonic Array 
 	
 	Description: return a boolean value if the array is monotonic increasing/ decreasing or not. 
 	monotonic increasing: i < j A[i] <= A[j] monotonic decreasing: i < j A[i] >= A[j]
@@ -159,7 +159,7 @@
 	Time Complexity: O(N)
 	Space Complexity: O(1)
 
-## Question 485 Max Consecutive Ones 
+### Question 485 Max Consecutive Ones 
 	
 	Description: return the max number of consecutive 1s in the array.
 
@@ -168,7 +168,7 @@
 	Time Complexity: O(N)
 	Space Complexity: O(1)
 
-## Question 283 Move Zeroes 
+### Question 283 Move Zeroes 
 	
 	Description: move all 0's in the array the the end while mainting the relative order of none-zero elements.
 
@@ -177,7 +177,7 @@
 	Time Complexity: O(N)
 	Space Complexity: O(1)
 
-## Questin 448 Find All Numbers Disappeared in an Array 
+### Questin 448 Find All Numbers Disappeared in an Array 
 	
 	Description: Given an array with value all 1<= arr[i] <= n, find the numbers that never appear in the array but within the range. 
 
@@ -188,7 +188,7 @@
 	Time Complexity ; O(N)
 	Space Complexity: O(1)
 
-## Question 169 Majority Element 
+### Question 169 Majority Element 
 
 	Description: find the majority element in an array, that is the value that appears in the array more than length/2 times.
 

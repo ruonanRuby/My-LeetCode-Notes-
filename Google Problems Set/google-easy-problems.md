@@ -1,6 +1,6 @@
-### EASY PROBLEMS 
+## EASY PROBLEMS 
 
-## 771.Jewels and Strones 
+### 771.Jewels and Strones 
 
 	Description: Given two strings, one for the jewels the other for the stones, find how many characters are there in the stone that is the same as characters in the jewel string.
 
@@ -9,7 +9,7 @@
 	Time Complexity: O(M+N); => M: size of jewel string, N: size of stone string 
 	Space Complexity: O(M);
 
-## 938. Range Sum of BST 
+### 938. Range Sum of BST 
 
 	Description: Given the root of BST, find the sum of all nodes value that between two values: L and R (inclusive).
 
@@ -21,7 +21,7 @@
 	Time Complexity: O(N) 
 	Space Complexity: O(H) < the height of the tree, O(N) for the extreme case >  
 
-## 905. Sort Array By Parity 
+### 905. Sort Array By Parity 
 
 	Description: Given a none-negative integers array, re-order the array so that all the even numbers come first and odd numbers follow.
 
@@ -30,7 +30,7 @@
 	Time Complexity: O(N)
 	Space Complexity: O(N)
 
-## 977. Squares of a Sorted Array (the same solution in the array problems set)
+### 977. Squares of a Sorted Array (the same solution in the array problems set)
 
 	Description: Given an non-decreasing integer array, return non-decreasing square array.
 
@@ -39,7 +39,7 @@
 	Time Complexity: O(N)
 	Space Complexity: O(N)
 
-## 929 Unique Email Addresses 
+### 929 Unique Email Addresses 
 	
 	Description: find the number of unique email addresses: when local name contains '.', it will be ignore , when local name contains '+', the rest characters before '@' will be ignored.
 
@@ -49,7 +49,7 @@
 	Time Complexity: O(N)
 	Space Complexity: O(N)
 
-## 942.DI String Match 
+### 942.DI String Match 
 	
 	Description: Find the Permutation arr for the given string S which contains 'I' and 'D' only, if S[i] == "I", then A[i] < A[i+1]; if S[i] == "D", then A[i] > A[i+1].
 
