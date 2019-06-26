@@ -47,6 +47,47 @@
 	Time Complexity: O(m*n) <m for the size of string>
 	Space Complexity: O(1)
 
+### 344 Reverse String 
+	
+	Description: Given a char array, reverse the order of array. Requirement: O(1) memory.
+
+	My Solution: two pointers, i from the beginning and j from the end, swap their pointed value,
+	the loop ends when i = j.
+
+	Time Complexity: O(N)
+	Space Complexity: O(1)
+
+### 520 Detect Capital 
+	
+	Description: Given an array, check whether it contains no uppcase / all uppercase / 
+	uppercase in the first letter.
+
+	My Solution: Create an integer variable called upperCount, if detect uppercase in the given
+	String, count++. return whether count == length / count == 0 / count == 1 && first letter is uppercase
+
+	Time Complexity: O(N);
+	Space Complexity: O(1);
+
+### 443. String Compression 
+	NOTE: the given function in leetcode is awful, use lintcode for this problem instead 
+	https://www.lintcode.com/problem/string-compression/note?_from=ladder&&fromId=94
+
+	Description: Given a string with repeated letters, output new string with repeat letter count 
+	if new string is smaller than the original. For example: output "a3b2c5" for "aaabbccccc", but
+	"aabbcc" for "aabbcc"
+
+	My Solution: first check if the length of original array <= 1 or does not exist, return the origial
+	directly, then we assin two variable: start and end, we check when the first different letter comes,
+	if the value start points is different than the end points, we calculate the difference and 
+	add the end value to the new string, do this until we iterate the whole original string.
+	At the end we double check if the new string's length < original we return new /original.
+
+	Time Complexity: O(N);
+	Space Complexity: O(1);
+
+
+
+
 ## MEDIUM 
 
 ### 8. String to Integer (atoi)
