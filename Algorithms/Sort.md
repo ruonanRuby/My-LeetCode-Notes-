@@ -23,3 +23,27 @@
 
 	Time Complexity: O(M+N);
 	Space Complexity: O(N);
+
+## Medium 
+
+### 179 Largest Number 
+	
+	Description: Given a list of non negative number, return a largest number string 
+	that these number can form.
+
+	My Solution: Create a string array and sort it with the required order, that is, 
+	'ab' > 'ba' then add the new sorted array into the string and return the string.
+
+	Time Complexity: O(nlogn);
+	Space Complexity: O(N)
+
+### 75. Sort Colors 
+
+	Description: Given an integer array with one three types of number 0 -> red 
+	1 -> white 2 -> blue,sort the array by the order of red -> white -> blue,i.e. 0,1,2.
+
+	My Solution: Use three pointers, i points to 0, j points to 2, and k iterates the array,
+	swap when k points to 0/2, increase k only when k points to 0/1.
+
+	Time Complexity: O(N);
+	Space Complexity: O(1); 
