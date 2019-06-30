@@ -85,8 +85,37 @@
 	Time Complexity: O(N);
 	Space Complexity: O(1);
 
+### 824 Goat Latin 
 
+	Description: Given a string S, return the new string with several rules < check details in question>
 
+	My Solution: Split S by space, iterate each word in the array, if the word starts with vowel then 
+	copy it to the new string, if it starts with consonant then copy the substring from index 1 to the 
+	end first then copy the first letter, after finish all of these, add 'ma' and 'a' * (index + 1) to the end .
+
+	Time Complexity: O(N);
+	Space Complexity: O(N);
+
+### 345 Reverse Vowels of a String 
+
+	Description: reverse the order of string  when they are vowels 
+
+	My Solution: Change the string to the char array and use two pointers to check if they point 
+	to the vowels,if they do, then swap.
+
+	Time Complexity: O(N);
+	Space Complextiy: O(N);
+
+### 387 First Unique Character in a String 
+	
+	Description： Given a string,return the index of the first unique letter in this string.
+
+	My Solution: create a count array with length of 26, iterate the string and add the count of the
+	letter to the array. Re-traverse the string, and check if at its count position, the value is 1,
+	if it does, return the index. if none of them unique, return -1.
+
+	Time Complexity: O(N);
+	Space Complexity: O(1);
 
 ## MEDIUM 
 
