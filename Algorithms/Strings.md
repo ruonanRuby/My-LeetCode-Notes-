@@ -117,6 +117,30 @@
 	Time Complexity: O(N);
 	Space Complexity: O(1);
 
+### 28 Implement strStr()
+	
+	Description: Given two strings, return the index of the first occurrence of needle in haystack, 
+	return -1 if never exist.
+
+	My Solution: l1 for the length of haystack, l2 for the length of needle, if l1 < l2 return -1,
+	if l2 == 0 return 0, then a while loop check the index between [0, (l1 - l2)] if match the first 
+	letter, check the substring, if it equals return i, loop ends, return -1.
+
+	Time Complexity: O(N);
+	Space Complexity: O(1);
+
+### 680 Valid Palindrome II 
+
+	Description: check if the given string is palindrome or not, you can delete at most one character 
+	to keep it as palindrome.
+
+	My Solution: recursion check both side, the most part is the same as check palindrome, and when 
+	we find un-matched character, we recursively test right - 1 or left + 1 side to see if delete 
+	either of the letter the remaining can be palindrome.
+
+	Time Complexity: O(N)
+	Space Complexity: O(1)
+
 ## MEDIUM 
 
 ### 8. String to Integer (atoi)
@@ -180,3 +204,42 @@
 
 	Time Complexity: O(N)
 	Space Complexity: O(N)
+
+### 6. ZigZag Conversion 
+
+	Description: form the string with the zigzag conversion then output the string line by line.
+
+	My Solution: Since, the row number is given, and we know that the zig zag form starts from index 0 and 
+	when it reaches row - 1 it starts decreasing index until it reaches 0 then increases again. Therefore,
+	we can create a string array with length of row number, and follow the zigzag pattern to add letter 
+	in the array then output the array from index 0 to row -1.
+
+	Time Compleixty: O(N);
+	Space Complexity: O(K);
+
+### 522 Longest Uncommon Subsequence II
+	
+	Description: Given a list of strings, find the longest length of uncommon subsequence among them, 
+	return -1 if these does not exist such one.
+
+	My Solution: Sort the list by the length of string from the longest to the shorest, then iterate the list 
+	and also iterate all the other strings that are short than the target, create a boolean value called flag, 
+	if there exists its subsequence set flag to false and break the inner loop, if the flag is still true 
+	return the current out string length, otherwise at the end of out loop return -1.
+
+	Time Complexity: O(x* N^2); <x is the arverage length of string> 
+	Space Complexity: O(1);
+
+## Hard 
+### 340 Longest Substring with At Most K Distinct Characters 
+
+	Description: give a string and integer k, find the length of longest substring that contains 
+	at most k distinct characters. 
+
+	My Solution: use hashmap and two pointers, right pointer iterates the string and left pointer
+	marks the start position, put the letter in the map, if the map size == k+1, find the left most index,
+	remove its value from the map and assign left = delete_index + 1,  return max between exist max and 
+	right - left.
+
+	Time Complexity: O(N)
+	Space Complexity: O(k)
