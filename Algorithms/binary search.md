@@ -33,3 +33,36 @@
 
 	Time Complexity: O(logn)
 	Space Complexity: O(1)
+
+### 540 Single Element in a Sorted Array 
+	 Description: Given a array where every element appears twice except one, find the single
+	 element using O(logN) time and O(N) space.
+
+	 My Solution: Using binary search to solve the problem, as we know that if there is 
+	 no such a element, then there will be 2*k elements total,but now it is 2*k + 1
+	 therefore we can use binary search to locate the element space, if it is in the odd space, 
+	 then return right, if it is in the even space then return left. 
+
+	 Time Complexity: O(logn)
+	 Space Complexity: O(N)
+
+### 162. Find Peak Element 
+	Description: Find the peak index of the array, that is the number in that index is larger than 
+	its adjacent two numbers. 
+
+	My Solution: Using binary element to find the index, if < mid + 1,left = mid + 1 
+	if < mid - 1,right = mid. return the largest number between left and right
+
+	Time Complexity: O(logN)
+	Space Complexity: O(N)
+
+### 153 Find Minimum in Rotated Sorted Array
+	Description: Find the minimum number in the ascending rotated at unknown pivote order array.
+
+	My Solution: check the last value with the first, if the last is larger return the first 
+	as the array is in ascending order, then do the binary search, if the mid is larger then 
+	nums[0] then left = mid + 1, else right = mid, return mid if it is smaller than its two adjacent 
+	values, and return the smaller value in left and right if there is no return in the loop.
+
+	Time Complexity; O(logN)
+	Space Complexity: O(1)
