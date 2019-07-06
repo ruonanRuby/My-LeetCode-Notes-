@@ -66,3 +66,19 @@
 
 	Time Complexity; O(logN)
 	Space Complexity: O(1)
+
+### 33 Search in Rotated Sorted Array
+	Description: Given an sorted array in ascending order, then rotate it with an unknown pivot,
+	find the target number in the array, return index if it exist return -1 if it is not.
+
+	My Solution: Draw a picture for this problem which helps sovling. 
+	Fist check if either left or right or mid is the target if it does return directly.
+	If not, there are four cases:
+	First: Both mid and target in left to peak range -> right = mid
+	Second: Both mid and target in bottom to right range  -> left = mid + 1
+	Third: Target is in left to peak range but mid is in bottom to right range -> right = mid 
+	Fourth: Target is in bottom to right range and mid is in left to peak range. -> left = mid + 1
+	return -1 if we cannot find the target.
+
+	Time Complexity: O(logN)
+	Space Complexity: O(1)
