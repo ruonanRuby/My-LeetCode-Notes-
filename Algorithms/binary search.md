@@ -67,7 +67,7 @@
 	Time Complexity; O(logN)
 	Space Complexity: O(1)
 
-### 33 Search in Rotated Sorted Array
+### 33 Search in Rotated Sorted Array I
 	Description: Given an sorted array in ascending order, then rotate it with an unknown pivot,
 	find the target number in the array, return index if it exist return -1 if it is not.
 
@@ -81,4 +81,19 @@
 	return -1 if we cannot find the target.
 
 	Time Complexity: O(logN)
+	Space Complexity: O(1)
+
+### 81 Search in Rotated Sorted Array II
+	Description: Most the same as the last question,but this one allows duplicate values,
+	question 33 does not. 
+
+	My Solution: Based on the last question algorithm, and consider the cases that the mid 
+	value equals to left value, or mid value equals to right value. 
+	If mid == left > right  -> left = mid + 1;
+	If mid == right < left -> right = mid;
+	else mid == left == right (we cannot make sure which side the mid is) then we do left ++;
+
+	return true if nums[mid] == target.
+
+	Time Complexity: O(logN);
 	Space Complexity: O(1)
